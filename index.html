@@ -8,6 +8,7 @@
   <meta name="description" content="Simple strat roulette tool for PUBG">
   <meta name="author" content="Sn8z">
 
+  <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
   <script
@@ -26,7 +27,7 @@
   <header>
     <div class="ui inverted menu">
       <div class="ui container">
-        <a href="#" class="header">
+        <a href="#" class="header" onclick="location.reload()">
           <h2 class="ui inverted icon header">
             <i class="help circle outline icon"></i>
             <div class="content">
@@ -40,48 +41,63 @@
   <main>
     <div class="ui inverted main text container">
       <div class="ui inverted segment">
+
+        <div class="ui center aligned grid">
+          <div class="two column row">
+            <div class="column">
+              <h3 class="ui inverted icon header">
+                <i class="marker yellow icon"></i>
+                <div class="content">
+                  Drop Location
+                </div>
+              </h3>
+              <br>
+              <h1 id="dropText"></h1>
+              <br>
+            </div>
+            <div class="column">
+              <h3 class="ui inverted icon header">
+                <i class="bomb grey icon"></i>
+                <div class="content">
+                  Weapon
+                </div>
+              </h3>
+              <br>
+              <h1 id="weaponText"></h1>
+              <br>
+            </div>
+          </div>
+          <div class="two column row">
+            <div class="column">
+              <h3 class="ui inverted icon header">
+                <i class="car blue icon"></i>
+                <div class="content">
+                  Vehicle
+                </div>
+              </h3>
+              <br>
+              <h1 id="vehicleText"></h1>
+              <br>
+            </div>
+            <div class="column">
+              <h3 class="ui inverted icon header">
+                <i class="crosshairs red icon"></i>
+                <div class="content">
+                  Playstyle
+                </div>
+              </h3>
+              <br>
+              <h1 id="playstyleText"></h1>
+              <br>
+            </div>
+          </div>
+        </div>
+
         <center>
-        <h2 class="ui inverted icon header">
-          <i class="marker icon"></i>
-          <div class="content">
-            Drop Location
-          </div>
-        </h2>
-        <br>
-        <p id="dropText">
-
-        </p>
-        <br>
-
-        <h2 class="ui inverted icon header">
-          <i class="military icon"></i>
-          <div class="content">
-            Weapon
-          </div>
-        </h2>
-        <br>
-        <p id="weaponText">
-
-        </p>
-        <br>
-
-        <h2 class="ui inverted icon header">
-          <i class="car icon"></i>
-          <div class="content">
-            Vehicle
-          </div>
-        </h2>
-        <br>
-        <p id="vehicleText">
-
-        </p>
-        <br>
-        <button class="ui secondary button" onclick="location.reload();">
-          Reroll
-        </button>
-
-
-      </center>
+          <button class="ui secondary button" onclick="location.reload();">
+            Reroll
+          </button>
+        </center>
       </div>
     </div>
   </main>
@@ -89,7 +105,7 @@
 
     <div class="ui inverted vertical footer segment">
       <div class="ui center aligned container">
-        Made by Sn8z
+        Made by <a href="https://github.com/Sn8z">Sn8z</a>
       </div>
     </div>
   </footer>
