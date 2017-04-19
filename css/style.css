@@ -1,0 +1,15 @@
+body {
+  background-color: #333333 !important;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 10px;
+}
+
+td {
+    text-align: center;
+}
